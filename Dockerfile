@@ -4,6 +4,8 @@ EXPOSE 80
 
 WORKDIR /app
 
+RUN git submodule init && git submodule update
+
 COPY ./chat /app/chat
 COPY ./photo-ticket-server /app/photo-ticket-server
 
