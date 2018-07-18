@@ -11,7 +11,7 @@ WORKDIR /app/chat
 RUN yarn
 RUN yarn build
 
-RUN rm -r /app/photo-ticket-server/build
+RUN rm -r /app/chat/build
 RUN mv ./build /app/photo-ticket-server
 
 RUN ls /app/photo-ticket-server/build
