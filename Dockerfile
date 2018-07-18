@@ -2,8 +2,6 @@ FROM node:8.9.1
 
 EXPOSE 80
 
-RUN git submodule init && git submodule update
-
 WORKDIR /app
 
 COPY ./chat /app/chat
