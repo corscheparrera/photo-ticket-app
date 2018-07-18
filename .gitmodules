@@ -3,5 +3,5 @@
 	url = https://github.com/corscheparrera/chat
 
 [submodule "photo-ticket-server"]
-	path = chat
+	path = photo-ticket-server
 	url = https://github.com/corscheparrera/photo-ticket-server
