@@ -2,9 +2,9 @@ FROM node:8.9.1
 
 EXPOSE 80
 
-WORKDIR /app
-
 RUN git submodule init && git submodule update
+
+WORKDIR /app
 
 COPY ./chat /app/chat
 COPY ./photo-ticket-server /app/photo-ticket-server
