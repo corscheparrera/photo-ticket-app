@@ -1,0 +1,7 @@
+[submodule "chat"]
+	path = chat
+	url = https://github.com/corscheparrera/chat
+
+[submodule "photo-ticket-server"]
+	path = chat
+	url = https://github.com/corscheparrera/photo-ticket-server
