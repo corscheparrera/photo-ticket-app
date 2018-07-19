@@ -1,0 +1,21 @@
+version: '3'
+services:
+  app:
+    container_name: phototicket
+    restart: always
+    environment: 
+      NODE_ENV: 'production'
+      PORT: 80
+      VIRTUAL_HOST: www.photo-ticket.ca
+      LETSENCRYPT_HOST: www.photo-ticket.ca
+      LETSENCRYPT_EMAIL: m.lussier@live.ca
+    image: phototicket
+    build: .
+    expose:
+      - 80
+
+networks:
+    default:
+        external:
+            name: nginx-proxy
+
