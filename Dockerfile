@@ -13,9 +13,6 @@ RUN yarn build
 
 RUN mv ./build /app/photo-ticket-server
 
-RUN ls /app/photo-ticket-server/build
-
-
 WORKDIR /app/photo-ticket-server
 RUN yarn
 
