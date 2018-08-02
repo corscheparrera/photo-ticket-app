@@ -6,8 +6,8 @@ services:
     environment: 
       NODE_ENV: 'production'
       PORT: 80
-      VIRTUAL_HOST: photo-ticket.ca
-      LETSENCRYPT_HOST: photo-ticket.ca
+      VIRTUAL_HOST: photo-ticket.com
+      LETSENCRYPT_HOST: photo-ticket.com
       LETSENCRYPT_EMAIL: m.lussier@live.ca
     image: phototicket
     build: .
